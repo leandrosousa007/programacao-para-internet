@@ -1,0 +1,60 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Faça seu cadastro de paciente na Clínica Teretana Zapacove para agendamento de consultas.">
+        <title>Clínica Teretana Zapacove - Cadastro</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Clínica Teretana Zapacove</h1>
+        </header>
+    
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+        
+
+        <main>
+            <h2>Cadastro de Paciente</h2>
+            
+            <form action="cadastraPaciente.php" method="POST">
+                <p>
+                    <label for="nome">Nome Completo:</label><br>
+                    <input type="text" id="nome" name="nome" required>
+                </p>
+
+                <p>
+                    <label for="esporte">Esporte Praticado:</label><br>
+                    <input type="text" id="esporte" name="esporte">
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone de Contato:</label><br>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </p>
+
+                <p>
+                    <label for="motivo">Motivo da Consulta (Ex: Avaliação, Lesão, Performance):</label><br>
+                    <input type="text" id="motivo" name="motivo" required>
+                </p>
+                <br>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </main>
+        <br><br>
+        
+
+        <footer>
+            <p>Endereço: Av. João Naves de Ávila, Santa Mônica, Uberlândia |
+                Contato: (34) 1234-5678 | Email: ufu@br
+            </p>
+        </footer>
+    </body>
+</html>
