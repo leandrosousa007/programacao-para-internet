@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="name" content="Leandro Evaristo">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container-cadastro">
+        
+        <h1 class="titulo-principal">Cadastro de Cliente</h1>
+        
+        <form action="cadastraCliente.php" method="POST" enctype="multipart/form-data">
+            
+            <input type="hidden" name="formulario" value="pagina_cadastro">
+
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                
+                <p>
+                    <label for="nome">Nome:*</label>
+                    <input type="text" id="nome" name="nome" required autofocus minlength="2" maxlength="50" placeholder="Digite seu nome completo"><span class="status-icon"></span>
+                </p>
+
+                <p>
+                    <label for="email">E-mail:*</label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@email.com"><span class="status-icon"></span>
+                </p>
+                
+                <p>
+                    <label for="cpf">CPF:*</label>
+                    <input type="text" id="cpf" name="cpf" required pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" placeholder="xxx.xxx.xxx-xx"><span class="status-icon"></span>
+                </p>
+                
+                <p>
+                    <label for="idade">Idade:*</label>
+                    <input type="number" id="idade" name="idade" required min="0"><span class="status-icon"></span>
+                </p>
+                
+                <p>
+                    <label for="telefone">Telefone:*</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX"><span class="status-icon"></span>
+                </p>
+                
+                <p>
+                    <label for="data_nascimento">Data de nascimento:</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento"><span class="status-icon"></span>
+                </p>
+                
+                <p>
+                    <label>Sexo:</label>
+                    <input type="radio" id="sexo_masculino" name="sexo" value="masculino">
+                    <label for="sexo_masculino">Masculino</label>
+                    
+                    <input type="radio" id="sexo_feminino" name="sexo" value="feminino">
+                    <label for="sexo_feminino">Feminino</label>
+                    
+                    <input type="radio" id="sexo_outro" name="sexo" value="outro">
+                    <label for="sexo_outro">Outro</label>
+                </p>
+                
+                <p>
+                    <label for="estado_civil">Estado civil:</label>
+                    <select id="estado_civil" name="estado_civil">
+                        <option value="">Selecione</option>
+                        <option value="solteiro">Solteiro(a)</option>
+                        <option value="casado">Casado(a)</option>
+                        <option value="divorciado">Divorciado(a)</option>
+                        <option value="viuvo">Viúvo(a)</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <label for="nacionalidade">Nacionalidade:</label>
+                    <input type="text" id="nacionalidade" name="nacionalidade" value="Brasileira" readonly>
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço de Entrega</legend>
+
+                <p>
+                    <label for="cep">CEP:*</label>
+                    <input type="text" id="cep" name="cep" required placeholder="XXXXX-XXX"><span class="status-icon"></span>
+                </p>
+
+                <p>
+                    <label for="tipo_logradouro">Tipo de logradouro:*</label>
+                    <select id="tipo_logradouro" name="tipo_logradouro" required>
+                        <option value="">Selecione</option>
+                        <option value="rua">Rua</option>
+                        <option value="avenida">Avenida</option>
+                        <option value="praca">Praça</option>
+                        <option value="rodovia">Rodovia</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="logradouro">Logradouro:*</label>
+                    <input type="text" id="logradouro" name="logradouro" required><span class="status-icon"></span>
+                </p>
+
+                <p>
+                    <label for="bairro">Bairro:*</label>
+                    <input type="text" id="bairro" name="bairro" required><span class="status-icon"></span>
+                </p>
+
+                <p>
+                    <label for="cidade">Cidade:*</label>
+                    <input type="text" id="cidade" name="cidade" required><span class="status-icon"></span>
+                </p>
+
+                <p>
+                    <label for="estado">Estado:*</label>
+                    <input type="text" id="estado" name="estado" required><span class="status-icon"></span>
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações Adicionais</legend>
+
+                <div>
+                    <p><label>Interesses:</label></p>
+                    <p>
+                        <input type="checkbox" id="int_filmes" name="interesses[]" value="filmes">
+                        <label for="int_filmes">Filmes</label>
+                        
+                        <input type="checkbox" id="int_informatica" name="interesses[]" value="informatica">
+                        <label for="int_informatica">Informática</label>
+                        
+                        <input type="checkbox" id="int_games" name="interesses[]" value="games">
+                        <label for="int_games">Games</label>
+                        
+                        <input type="checkbox" id="int_livros" name="interesses[]" value="livros">
+                        <label for="int_livros">Livros</label>
+                        
+                        <input type="checkbox" id="int_roupas" name="interesses[]" value="roupas">
+                        <label for="int_roupas">Roupas</label>
+                    </p>
+                </div>
+
+                <div>
+                    
+                    <label for="info_complementar"></label>
+                    <p>Informações complementares:</p>
+                        <textarea id="info_complementar" name="info_complementar" rows="3" cols="40" placeholder="Escreva aqui outras informações"></textarea>
+                        <span class="status-icon"></span>
+                    
+                </div>
+
+                <p>
+                    <label for="arquivo_imagem">Anexar arquivo de imagem:</label>
+                    <input type="file" id="arquivo_imagem" name="arquivo_imagem" accept="image/*">
+                </p>
+
+            </fieldset>
+            
+            <p>
+                <button type="submit" id="btn-enviar">Cadastrar Cliente</button>
+            </p>
+
+        </form>
+    </div>
+
+</body>
+</html>

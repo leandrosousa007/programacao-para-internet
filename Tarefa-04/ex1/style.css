@@ -1,0 +1,49 @@
+body {
+    background-color: #ddd;
+    font-family: Helvetica;
+    color: #444;
+    line-height: 1.5;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+
+main {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+h1, h2 {
+    color: rgb(140, 76, 8);
+}
+
+h2 + p {
+    text-indent: 2rem;
+}
+
+#experiencia li {
+    font-weight: bold;
+}
+
+a:link {
+    color: rgb(140, 76, 8);
+    text-decoration: none;
+}
+a:visited {
+    color: #bd0808;
+}
+a:hover {
+    text-decoration: underline;
+    color: #992929;
+}
+a:active {
+    color: rgb(99, 1, 1);
+}
+
+section {
+    margin-top: 0px;
+    padding-bottom: 5px;
+    border-top: solid 1px gray;
+    padding-top: 15px; 
+}

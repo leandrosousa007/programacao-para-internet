@@ -1,0 +1,36 @@
+body {
+    background-color: #dbdbdb;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+main {
+    max-width: 300px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #cbd5e0;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 6px 0 16px 0;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+}
+
+input:focus {
+    box-shadow: 0 0 5px #999999;
+    outline: none;
+    border-color: #999999;
+}

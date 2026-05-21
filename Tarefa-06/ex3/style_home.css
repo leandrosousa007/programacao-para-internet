@@ -1,0 +1,77 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #dbdbdb;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #023479;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #061f42;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    background-color: #ffffff;
+    width: 70%; /* Orientação do Exercício 3: ocupar 70% */
+    margin: 30px auto;
+    padding: 30px;
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+}
+
+h2 {
+    color: #023479;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #023479;
+}
+
+p {
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #023479;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ====================================================================
+   MEDIA QUERY - EXERCÍCIO 3
+   Aplicada apenas quando a largura da tela (viewport) for < 500px 
+   ==================================================================== */
+@media screen and (max-width: 499px) {
+    main {
+        width: 100%; /* Passa a ocupar 100% da largura em smartphones */
+        margin: 0;
+    }
+    
+    nav {
+        display: none; /* Esconde o menu de navegação em smartphones */
+    }
+}
