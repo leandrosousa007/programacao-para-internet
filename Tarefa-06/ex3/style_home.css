@@ -38,16 +38,14 @@ nav ul li a {
 
 main {
     background-color: #ffffff;
-    width: 70%; /* Orientação do Exercício 3: ocupar 70% */
-    margin: 30px auto;
+    width: 70%; 
+    margin: 0 auto;
     padding: 30px;
-    box-sizing: border-box; /* Garante que o padding não quebre a largura */
 }
 
 h2 {
     color: #023479;
     padding-bottom: 5px;
-    border-bottom: 2px solid #023479;
 }
 
 p {
@@ -55,23 +53,20 @@ p {
 }
 
 footer {
-    background-color: #023479;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     padding: 15px;
+    margin-top: 30px;
 }
 
-/* ====================================================================
-   MEDIA QUERY - EXERCÍCIO 3
-   Aplicada apenas quando a largura da tela (viewport) for < 500px 
-   ==================================================================== */
-@media screen and (max-width: 499px) {
+
+@media (max-width: 500px) {
     main {
-        width: 100%; /* Passa a ocupar 100% da largura em smartphones */
-        margin: 0;
+        width: 100%; 
+        box-sizing: border-box; 
     }
-    
+
     nav {
-        display: none; /* Esconde o menu de navegação em smartphones */
+        display: none; 
     }
 }
