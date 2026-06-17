@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <h2>Cálculo do Peso Ideal</h2>
+
+    <label for="altura">Altura:</label>
+    <input type="text" id="altura" name="altura" placeholder="185">
+    <br><br>
+
+    <label for="sexo">Sexo:</label>
+    <input type="text" id="sexo" name="sexo" placeholder="masculino ou feminino">
+    <br><br>
+
+    <button type="button" id="botaoCalcular">Calcular</button>
+
+    <p id="mensagemSaida"></p>
+
+    <br><br>
+    <img src="images/1.png" alt="imagem 1" width="900px">
+
+    <script>
+        const botao = document.querySelector("#botaoCalcular");
+
+        
+        botao.onclick = function () {
+            // busca os nos da arvore DOM
+            const campoAltura = document.querySelector("#altura");
+            const campoSexo = document.querySelector("#sexo");
+            const parSaida = document.querySelector("#mensagemSaida");
+
+            // converte a altura para numero inteiro
+            let altura = parseInt(campoAltura.value);
+            
+            // converte o texto do sexo para minusculo
+            let sexo = campoSexo.value.toLowerCase().trim(); 
+            let pesoIdeal;
+
+            // verifica o sexo e aplica a fórmula correspondente
+            if (sexo === "masculino") {
+                pesoIdeal = 52 + (0.75 * (altura - 152.4));
+                
+                parSaida.textContent = `O seu peso ideal calculado é de ${pesoIdeal.toFixed(2)} kg.`;
+            } else if (sexo === "feminino") {
+                pesoIdeal = 52 + (0.67 * (altura - 152.4));
+                parSaida.textContent = `O seu peso ideal calculado é de ${pesoIdeal.toFixed(2)} kg.`;
+            } else {
+                parSaida.textContent = `Erro: Por favor, digite "masculino" ou "feminino" no campo sexo.`;
+            }
+        };
+    </script>
+</body>
+</html>
