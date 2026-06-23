@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container-fundo">
+        <div class="cartao-cadastro">
+            <h2>Cadastro de Usuário</h2>
+            
+            <form name="cadastro" action="#" method="post">
+                <div class="grupo-campo">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario">
+                    <span class="erro-msg"></span>
+                </div>
+                
+                <div class="grupo-campo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha">
+                    <span class="erro-msg"></span>
+                </div>
+                
+                <div class="grupo-campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="erro-msg"></span>
+                </div>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
