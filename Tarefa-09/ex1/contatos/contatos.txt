@@ -1,0 +1,9 @@
+Daniel;fulano@mail.com;23123
+Mane;mane@mail.com;22333
+jose;se@fdsfsd.com;3344433
+Leandro Evaristo;leandroevaristo2006@gmail.com;34996848290
+Kaio;kaio@gmail.com;1243454
+joana;joana@gmail.com;887867
+helena;h@gmail.com;009123
+<script>alert('Ataq. X S S')</script>;script@gmail.com;78812
+<script>window.location='http://www.ufu.br'</script>;s@gmail.com;7676832

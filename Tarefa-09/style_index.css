@@ -1,0 +1,20 @@
+
+body {
+    text-align: center; 
+    padding-top: 100px; 
+}
+
+
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #023479; 
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+a:hover {
+    background-color: #061f42; 
+}
